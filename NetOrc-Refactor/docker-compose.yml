@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  dev:
+    image: wancloudsinc/netorc-frontend
+    entrypoint: /opt/app/bin/run_app.sh
+    environment:
+      NODE_ENV: development
+      API_URL: https://api-analytics-netorc.wanclouds.net:8081
+      IS_SECURE: 'yes'
+      PORT: 443
+    volumes:
+      - .:/opt/app
+      - /opt/app/node_modules
+    ports:
+      - "443:443"

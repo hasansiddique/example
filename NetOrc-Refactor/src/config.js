@@ -1,0 +1,18 @@
+module.exports = {
+  agent: process.env.AGENT_NAME,
+  api: process.env.API_URL || 'https://bleeding-netorc.wanclouds.net/',
+  backend: process.env.SANDBOX_INSTANCE || 'https://netorc.wanclouds.net/',
+  basicAuthentication: process.env.BASIC_AUTH || 'yes',
+  commerce: process.env.COMMERCE,
+  demo: process.env.DEMO,
+  deployment: process.env.DEPLOYMENT,
+  domain: process.env.DOMAIN,
+  host: '0.0.0.0',
+  https: process.env.IS_SECURE || 'no',
+  migration: process.env.MIGRATION,
+  netflow: process.env.NETFLOW,
+  port: process.env.PORT || 3000,
+  saasAgreement: process.env.SAAS,
+  templates: process.env.TEMPLATES,
+  alerts: process.env.ALERTS,
+};
